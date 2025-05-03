@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tools Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <h1>AI Tools Directory</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="toolsdetails.html">Tools Details</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="contactandprivacy.html">ConUS & PriP</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search AI tools...">
+        </div>
+
+        <div class="featured-section">
+            <h2>Featured Tools<span class="underline"></span></h2>
+            <div class="featured-tools" id="featuredTools">
+                <!-- Featured tools will be dynamically added here -->
+            </div>
+        </div>
+
+        <div class="categories">
+            <button class="category-btn active" data-category="all">All</button>
+            <button class="category-btn" data-category="productivity">Productivity</button>
+            <button class="category-btn" data-category="coding">Coding</button>
+            <button class="category-btn" data-category="chatbots">Chatbots</button>
+            <button class="category-btn" data-category="content">Content Writing</button>
+            <button class="category-btn" data-category="design">Design</button>
+            <button class="category-btn" data-category="video">Video</button>
+            <button class="category-btn" data-category="voice">Voice</button>
+            <button class="category-btn" data-category="presentation">Presentation</button>
+            <button class="category-btn" data-category="education">Education</button>
+            <button class="category-btn" data-category="data">Data Analysis</button>
+            <button class="category-btn" data-category="marketing">Marketing</button>
+            <button class="category-btn" data-category="branding">Branding</button>
+            <button class="category-btn" data-category="support">Customer Support</button>
+            <button class="category-btn" data-category="research">Research</button>
+            <button class="category-btn" data-category="legal">Legal</button>
+        </div>
+
+        <div class="tools-container" id="toolsContainer">
+            <!-- Tools will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
